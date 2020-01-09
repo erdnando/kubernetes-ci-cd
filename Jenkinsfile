@@ -8,7 +8,7 @@ node {
 
     tag = readFile('commit-id').replace("\n", "").replace("\r", "")
     appName = "hello-kenzan"
-    registryHost = "https://index.docker.io/v1/"
+    registryHost = ""
     imageName = "${registryHost}${appName}:${tag}"
     env.BUILDIMG=imageName
 
